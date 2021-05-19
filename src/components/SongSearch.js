@@ -3,7 +3,7 @@ import {helpHttp} from "../helpers/helpHttp";
 import Loader from './Loader';
 import SongDetails from './SongDetails';
 import SongForm from './SongForm';
-
+import './SongSearch.css';
 const SongSearch = () => {
     const [search, setSearch] = useState(null);
     const [lyric, setLyric] = useState(null);
@@ -27,7 +27,7 @@ const SongSearch = () => {
 
             setLoading(true);
 
-            //guardamos as respuesta a cada una de las peticiones
+            //guardamos las respuesta a cada una de las peticiones
             const [artistRes, songRes] = await Promise.all([
                 helpHttp().get(artistUrl), 
                 helpHttp().get(songUrl)
@@ -44,12 +44,14 @@ const SongSearch = () => {
 
     return (
         <div className="song-search">
-            <h1>Buscador de música</h1>
-            {loading && <Loader/>}
-            <SongForm handleSearch={handleSearch}/>
-            {search && !loading && (
-               <SongDetails search={search} lyric={lyric} bio={bio}/> 
-            )}
+            <h1>Buscador de canciones</h1>
+            <article className="grid-1-3">
+                {loading && <Loader/>}
+                <SongForm handleSearch={handleSearch}/>
+                {search && !loading && (
+                <SongDetails search={search} lyric={lyric} bio={bio}/> 
+                )}
+            </article>
         </div>
     )
 }

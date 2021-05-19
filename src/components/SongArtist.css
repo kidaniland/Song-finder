@@ -1,0 +1,32 @@
+h3 {
+    color: #dedede;
+    margin-bottom: 1rem;
+}
+img {
+    max-width: 50%;
+    height: auto;
+}
+hr {
+    margin: 1rem;
+}
+p{
+    color: #dedede;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.p-bio{
+    color: #dedede;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 35px;
+}
+a{
+    color: #dedede;
+}
+a:hover {
+    color:violet;
+}

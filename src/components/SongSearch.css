@@ -1,0 +1,11 @@
+h1 {
+  color:#dedede;
+  padding-bottom: 2rem;
+  margin: 1rem;
+}
+
+article {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+  }

@@ -3,7 +3,7 @@ import React from 'react';
 const SongLyrics = ({title, lyrics}) => {
     return (
         <section>
-            <h3>{title}</h3>
+            <h2>{title}</h2>
             <blockquote style={{whiteSpace:"pre-wrap"}}>{lyrics}</blockquote>
         </section>
     )

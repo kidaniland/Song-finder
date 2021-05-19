@@ -1,0 +1,15 @@
+.message {
+    padding: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 736px){
+    .message {
+        padding-top: 3rem;
+        margin-top: 10rem;
+        margin-bottom: -7rem;
+
+    }
+}

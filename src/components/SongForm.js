@@ -1,4 +1,5 @@
-import React, {useState}from 'react'
+import React, {useState}from 'react';
+import './SongForm.css';
 
 const initialForm = {
     artist: "",
@@ -28,19 +29,27 @@ const SongForm = ({handleSearch}) => {
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="div-form">
+            <form onSubmit={handleSubmit} className="form">
+                <label for="artist" className="form__label">Nombre del intérprete</label>
                 <input 
+                    className="form__input"
                     type="text" 
                     name="artist" 
-                    placeholder="Nombre del intérprete"
+                    id="artist"
+                    autoComplete="off"
+                    placeholder=" "
                     onChange={handleChange}
                     value={form.artist} 
                 />
+                <label for="song" className="form__label">Nombre de la canción</label>
                 <input 
+                    className="form__input"
                     type="text" 
                     name="song" 
-                    placeholder="Nombre de la canción"
+                    id="song"
+                    autoComplete="off"
+                    placeholder=" "
                     onChange={handleChange} 
                     value={form.song} 
                 />
