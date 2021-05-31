@@ -10,7 +10,9 @@ const SongArtist = ({artist}) => {
             <p>{artist.intBornYear} - {artist.intDiedYear || "Presente"}</p>
             <p>{artist.strCountry}</p>
             <p>{artist.strGenre} - {artist.strStyle}</p>
-            <a href={`http://${artist.strWebsite}`} target="_blank" rel="noreferrer">Sitio web oficial</a>
+            <a href={`http://${artist.strWebsite}`} target="_blank" rel="noreferrer">
+                <i class="fas fa-link"></i> Sitio web oficial
+            </a>
             <hr/>
             <p className="p-bio">{artist.strBiographyEN}</p>
         </section>

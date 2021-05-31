@@ -1,11 +1,22 @@
+.song-search {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 h1 {
-  color:#dedede;
+  color:#5b6d5b;
   padding-bottom: 2rem;
   margin: 1rem;
+  z-index: 1;
 }
 
 article {
     height: 100vh;
     display: grid;
     justify-content: center;
+  }
+
+  @media screen and (min-width: 1024px){
+
   }

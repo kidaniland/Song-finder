@@ -25,6 +25,7 @@ const SongForm = ({handleSearch}) => {
         }
 
         handleSearch(form);
+
         setForm(initialForm);
     }
 

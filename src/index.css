@@ -11,19 +11,20 @@ html {
 
 body{
   font-family: 'Convergence', sans-serif;
-  background: #16222A;
-  background: -webkit-linear-gradient(to right, #3A6073, #16222A);
-  background: linear-gradient(to right, #3A6073, #16222A);
+  background: #FEAC5E;
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
 }
 
 h2 {
-  color: #dedede;
+  color: #fff;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 blockquote {
   color: #dedede;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 1024px){
@@ -31,6 +32,7 @@ blockquote {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
-    gap: 2rem
+    gap: 2rem;
+    padding-top: 3rem;
   }
 }

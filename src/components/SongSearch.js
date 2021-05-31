@@ -1,9 +1,11 @@
 import React, {useState, useEffect}from 'react';
 import {helpHttp} from "../helpers/helpHttp";
 import Loader from './Loader';
+import ShapeDivider from './ShapeDivider';
 import SongDetails from './SongDetails';
 import SongForm from './SongForm';
 import './SongSearch.css';
+
 const SongSearch = () => {
     const [search, setSearch] = useState(null);
     const [lyric, setLyric] = useState(null);
@@ -23,7 +25,7 @@ const SongSearch = () => {
             let artistUrl =`https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artist}`;
             let songUrl =`https://api.lyrics.ovh/v1/${artist}/${song}`;
 
-            console.log("--->", artistUrl, songUrl);
+            //console.log("--->", artistUrl, songUrl);
 
             setLoading(true);
 
@@ -43,8 +45,9 @@ const SongSearch = () => {
     }, [search]) //se ejecutará cuando el valor de search cambie
 
     return (
-        <div className="song-search">
-            <h1>Buscador de canciones</h1>
+        <div className="song-search active">
+            <ShapeDivider/>
+            <h1><i class="fas fa-search"></i>  Buscador de canciones <i class="fas fa-music"></i></h1>
             <article className="grid-1-3">
                 {loading && <Loader/>}
                 <SongForm handleSearch={handleSearch}/>

@@ -1,6 +1,7 @@
 h3 {
-    color: #dedede;
+    color: #fff;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 img {
     max-width: 50%;
@@ -10,7 +11,7 @@ hr {
     margin: 1rem;
 }
 p{
-    color: #dedede;
+    color: #fff;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -25,8 +26,9 @@ p{
     line-height: 35px;
 }
 a{
-    color: #dedede;
+    color: #fff;
+    font-size: 1.4rem;
 }
 a:hover {
-    color:violet;
+    color: #39a9cb;
 }
